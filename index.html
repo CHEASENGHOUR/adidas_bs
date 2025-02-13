@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+  <script src="./js/changing.js"></script>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Fontawesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <div class=" offcanvas offcanvas-start w-100" id="off-menu">
+    <div class="offcanvas-header container-fluid p-2 bg-info">
+      <div class="mx-auto">
+        <img src="https://t3.ftcdn.net/jpg/04/57/14/40/360_F_457144059_mEKNeZzEmyjelNuW02BBbsE0SpvAAeOi.jpg" alt="" width="50px">
+      </div>
+      <a href="#" data-bs-dismiss="offcanvas" aria-label="Close" id="x-close">
+        <i class="fa-solid fa-x" style="color: #000000;"></i>
+      </a>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">An item</li>
+        <li class="list-group-item">A second item</li>
+        <li class="list-group-item">A third item</li>
+        <li class="list-group-item">A fourth item</li>
+        <li class="list-group-item">And a fifth one</li>
+        <li class="list-group-item">And a fifth one</li>
+        <li class="list-group-item">And a fifth one</li>
+        <li class="list-group-item">And a fifth one</li>
+        <li class="list-group-item">And a fifth one</li>
+        <li class="list-group-item">And a fifth one</li>
+        <li class="list-group-item">And a fifth one</li>
+        <li class="list-group-item">And a fifth one</li>
+        <li class="list-group-item">And a fifth one</li>
+        <li class="list-group-item">And a fifth one</li>
+        <li class="list-group-item">And a fifth one</li>
+        <li class="list-group-item">And a fifth one</li>
+        <li class="list-group-item">And a fifth one</li>
+        <li class="list-group-item">And a fifth one</li>
+        <li class="list-group-item">And a fifth one</li>
+        <li class="list-group-item">And a fifth one</li>
+        <li class="list-group-item">And a fifth one</li>
+        <li class="list-group-item">And a fifth one</li>
+        <li class="list-group-item">And a fifth one</li>
+        <li class="list-group-item">And a fifth one</li>
+        <li class="list-group-item">And a fifth one</li>
+        <li class="list-group-item">And a fifth one</li>
+        <li class="list-group-item">And a fifth one</li>
+        <li class="list-group-item">And a fifth one</li>
+        <li class="list-group-item">And a fifth one</li>
+        <li class="list-group-item">And a fifth one</li>
+        <li class="list-group-item">And a fifth one</li>
+        <li class="list-group-item">And a fifth one</li>
+        <li class="list-group-item">And a fifth one</li>
+        <li class="list-group-item">And a fifth one</li>
+        <li class="list-group-item">And a fifth one</li>
+      </ul>
+    </div>
+    <div class=" offcanvas-bottom bg-danger">
+      <h4>USA</h4>
+    </div>
+  </div>
+
+  <div class="container-fluid" id="navbar">
+    <div class=" container-fluid bg-black text-white d-flex justify-content-center align-items-center">
+      <p class=" ms-auto" id="text-box">FREE STANDARD SHIPPING WITH ADICLUB</p>
+      <i class="fa-solid fa-angle-down px-2 ms-auto" id="text-box" style="font-size: 20px !important;"></i>
+    </div>
+    <div id="main" class="container-fluid bg-white shadow">
+      <div class="container-fluid">
+        <ul id="extra-link" class=" d-flex gap-3 list-unstyled justify-content-end">
+          <li><a href="#" class="active">help</a></li>
+          <li><a href="#">orders and returns</a></li>
+          <li><a href="#">gift cards</a></li>
+          <li><a href="#">join adiClub</a></li>
+        </ul>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div id="menu" class="col-3 col-sm-3 col-md-5 d-flex align-items-center gap-3 fs-2">
+            <a href="#" data-bs-toggle="offcanvas" data-bs-target="#off-menu">
+              <i class="fa-solid fa-bars" style="color: #000000;"></i>
+            </a>
+            <a href="#">
+              <i class="fa-regular fa-heart" style="color: #000000;"></i>
+            </a>
+          </div>
+          <div id="logo" class="col-3 col-sm-3 col-lg-2 col-xl-3 d-flex justify-content-md-start justify-content-end">
+            <a href="#">
+              <img src="https://t3.ftcdn.net/jpg/04/57/14/40/360_F_457144059_mEKNeZzEmyjelNuW02BBbsE0SpvAAeOi.jpg" alt="" width="80px">
+            </a>
+          </div>
+          <div class="col-6 col-md-6 col-lg-6" id="main-links">
+            <ul id="main-link" class=" h-100 d-flex list-unstyled justify-content-xl-center gap-0 align-items-center">
+              <li id="links" class="position-static d-flex fw-bolder">
+                <a href="#" id="link-a">MEN</a>
+                <div class="cotainer-fluid mega">
+                  <ul>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                  </ul>
+                </div>
+              </li>
+              <li id="links" class="position-static d-flex fw-bolder">
+                <a href="#" id="link-a">WOMEN</a>
+                <div class="cotainer-fluid mega">
+                  <ul>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                  </ul>
+                </div>
+              </li>
+              <li id="links" class="position-static d-flex fw-bolder"><a href="#" id="link-a">KIDS</a></li>
+              <li id="links" class="position-static d-flex fw-light"><a href="#" id="link-a">SALE</a></li>
+              <li id="links" class="position-static d-flex fw-light"><a href="#" id="link-a">NEW & TRENDING</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3 main-icon d-flex justify-content-end align-items-center">
+            <div id="search">
+              <input type="text" placeholder="Search">
+              <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+            </div>
+            <div class="icon d-flex gap-4 fs-5">
+              <a href="#"><i class="fa-solid fa-user" style="color: #000000;"></i></a>
+              <a href="#" id="heart" ><i class="fa-regular fa-heart" style="color: #000000;"></i></a>
+              <a href="#" id="glass" class="d-none"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></a>
+              <a href="#"><i class="fa-solid fa-bag-shopping" style="color: #000000;"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main style="height: 150vh;"></main>
+</body>
+
+</html>
