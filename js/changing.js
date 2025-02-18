@@ -32,6 +32,12 @@ $(document).ready(function () {
   $("#content-5").mCustomScrollbar({
     theme: "dark-thin"
   });
+  // $("#men-click").click(function () {
+  //   var men = $("#men");
+  //   var isVisible = men.css("right") === "0px";
+  //   men.css("right", isVisible ? "-100vw" : "0px");
+  // })
+
 });
 
 // Correct console.log usage
